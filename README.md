@@ -156,7 +156,7 @@ Proxy hazır. Şimdi uygulamaların proxy'yi kullanması gerekiyor.
 Firefox'ta yeni bir profil oluşturun (`firefox -P`), SOCKS5 proxy ayarlayın:
 
 - **Proxy ayarı:** SOCKS v5
-- **Sunucu:** `127.0.0.1` (aynı makine) veya `192.168.1.96` (LAN'dan)
+- **Sunucu:** `127.0.0.1` (aynı makine) veya `192.168.1.x` (LAN'dan, proxy sunucusunun IP'si)
 - **Port:** `20090`
 - **"SOCKS hostları için proxy DNS"** kutusunu **işaretleyin** (kritik — hostlist eşleşmesi için remote DNS şart)
 
