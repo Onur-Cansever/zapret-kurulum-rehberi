@@ -156,7 +156,7 @@ Proxy hazır. Şimdi uygulamaların proxy'yi kullanması gerekiyor.
 Firefox'ta yeni bir profil oluşturun (`firefox -P`), SOCKS5 proxy ayarlayın:
 
 - **Proxy ayarı:** SOCKS v5
-- **Sunucu:** `127.0.0.1` (aynı makine) veya `192.168.1.x` (LAN'dan, proxy sunucusunun IP'si)
+- **Sunucu:** `127.0.0.1` (aynı makine) veya `<LAN_IP>` (proxy sunucusunun yerel ağ IP'si)
 - **Port:** `20090`
 - **"SOCKS hostları için proxy DNS"** kutusunu **işaretleyin** (kritik — hostlist eşleşmesi için remote DNS şart)
 
@@ -256,7 +256,7 @@ cat /etc/zapret/auto-hostlist.txt
 
 ## 8. Güvenlik
 
-- Proxy **yalnızca LAN'a veya localhost'a** açılsın (`--bind-addr=127.0.0.1` veya `192.168.1.x`) — `0.0.0.0` sadece güvenilen ağlarda
+- Proxy **yalnızca LAN'a veya localhost'a** açılsın (`--bind-addr=127.0.0.1` veya `<LAN_IP>`) — `0.0.0.0` sadece güvenilen ağlarda
 - Hostlist dosyası (`auto-hostlist.txt`) düzenli kontrol edin; istenmeyen domain'leri silin
 - Zapret **yalnızca TCP/443** trafiği desync'ler; HTTP (80) ve diğer portlar geçişli
 
